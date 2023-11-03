@@ -1,243 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible"
-    content="ie=edge">
-  <title>Document</title>
-  <link href="css/app.css"
-    rel="stylesheet">
-</head>
+  <head>
+    <meta
+      charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge">
+    <title>Document</title>
+    <link
+      href="css/app.css"
+      rel="stylesheet">
+  </head>
 
-<body class="font-mono">
-  <header class="px-6 py-3">
-    header
-  </header>
-  <main>
-    <div class="">
-      <ul class="flex flex-col gap-[1px] bg-gray-300">
-        <li class="bg-white px-6 py-3 hover:bg-gray-100">
-          <div class="">
-            <div class="text-lg font-bold">Title of thing</div>
-            <div class="text-sm text-gray-400">
-              <ul class="flex flex-wrap items-center gap-x-3">
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
-                    <path fill-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <span>2:45</span>
-                </li>
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
-                    <path fill-rule="evenodd"
-                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <span>27</span>
-                </li>
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
-                    <path
-                      d="M5.625 3.75a2.625 2.625 0 100 5.25h12.75a2.625 2.625 0 000-5.25H5.625zM3.75 11.25a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75zM3 15.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zM3.75 18.75a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75z" />
-                  </svg>
-                  <span>Title of collection</span>
-                </li>
-              </ul>
+  <body
+    class="font-mono">
+    <header
+      class="px-6 py-3">
+      <h1>songs</h1>
+    </header>
+    <main
+      data-player>
+      <div
+        class="">
+        <ul
+          data-player-list
+          class="flex flex-col gap-[1px] bg-gray-300">
+          <li
+            data-template-player-list-item
+            class="bg-white px-6 py-3 hover:bg-gray-100">
+            <div
+              class="">
+              <div
+                data-player-list-item-title
+                class="text-lg font-bold">Title of thing</div>
+              <div
+                class="text-sm text-gray-400">
+                <ul
+                  class="flex flex-wrap items-center gap-x-3">
+                  <li
+                    class="flex items-center gap-x-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-3 w-3">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                        clip-rule="evenodd"/>
+                    </svg>
+                    <span
+                      data-player-list-item-duration></span>
+                  </li>
+                  <li
+                    class="flex items-center gap-x-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-3 w-3">
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"/>
+                    </svg>
+                    <span
+                      data-player-list-item-plays></span>
+                  </li>
+                  <li
+                    class="flex items-center gap-x-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-3 w-3">
+                      <path
+                        d="M5.625 3.75a2.625 2.625 0 100 5.25h12.75a2.625 2.625 0 000-5.25H5.625zM3.75 11.25a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75zM3 15.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zM3.75 18.75a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75z"/>
+                    </svg>
+                    <span
+                      data-player-list-item-playlist></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-player-modal
+        hidden>
+        <div
+          class="absolute inset-0 flex flex-col bg-white px-6 py-3">
+          <!-- Title / Close button -->
+          <div
+            class="flex items-start justify-between gap-x-8">
+            <div
+              data-player-modal-title
+              class="self-end text-lg font-bold">This is the title</div>
+            <div
+              data-player-modal-close
+              class="border border-black p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 24 24"
+                fill="currentColor"
+                class="h-6 w-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                  clip-rule="evenodd"/>
+              </svg>
             </div>
           </div>
-        </li>
-        <li class="bg-white px-6 py-3 hover:bg-gray-100">
-          <div class="">
-            <div class="text-lg font-bold">Title of thing</div>
-            <div class="text-sm text-gray-400">
-              <ul class="flex flex-wrap items-center gap-x-3">
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
-                    <path fill-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <span>2:45</span>
-                </li>
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
-                    <path fill-rule="evenodd"
-                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <span>27</span>
-                </li>
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
-                    <path
-                      d="M5.625 3.75a2.625 2.625 0 100 5.25h12.75a2.625 2.625 0 000-5.25H5.625zM3.75 11.25a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75zM3 15.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zM3.75 18.75a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75z" />
-                  </svg>
-                  <span>Title of collection</span>
-                </li>
-              </ul>
+          <!-- Lyrics -->
+          <div
+            class="flex-1 overflow-y-auto">
+            <div
+              data-player-modal-lyrics
+              class="whitespace-pre-line text-sm"></div>
+          </div>
+          <!-- Visualizer / Track Position -->
+          <div
+            class="relative my-3 h-24 bg-green-400">
+            <div
+              class="absolute inset-0">
+              <div
+                data-player-modal-progress
+                class="absolute bottom-0 top-0 w-3 bg-black"
+                style="left: 4%"></div>
             </div>
           </div>
-        </li>
-        <li class="bg-white px-6 py-3 hover:bg-gray-100">
-          <div class="">
-            <div class="text-lg font-bold">Title of thing</div>
-            <div class="text-sm text-gray-400">
-              <ul class="flex flex-wrap items-center gap-x-3">
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
+          <!-- Controls -->
+          <div
+            data-player-modal-controls
+            class="">
+            <ul
+              class="flex items-center justify-between">
+              <li>
+                <button
+                  data-player-modal-controls-previous
+                  class="border border-black p-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     viewbox="0 0 24 24"
                     fill="currentColor"
-                    class="h-3 w-3">
-                    <path fill-rule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <span>2:45</span>
-                </li>
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
-                    <path fill-rule="evenodd"
-                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <span>27</span>
-                </li>
-                <li class="flex items-center gap-x-1">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 24 24"
-                    fill="currentColor"
-                    class="h-3 w-3">
+                    class="h-6 w-6">
                     <path
-                      d="M5.625 3.75a2.625 2.625 0 100 5.25h12.75a2.625 2.625 0 000-5.25H5.625zM3.75 11.25a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75zM3 15.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zM3.75 18.75a.75.75 0 000 1.5h16.5a.75.75 0 000-1.5H3.75z" />
+                      fill-rule="evenodd"
+                      d="M20.25 12a.75.75 0 01-.75.75H6.31l5.47 5.47a.75.75 0 11-1.06 1.06l-6.75-6.75a.75.75 0 010-1.06l6.75-6.75a.75.75 0 111.06 1.06l-5.47 5.47H19.5a.75.75 0 01.75.75z"
+                      clip-rule="evenodd"/>
                   </svg>
-                  <span>Title of collection</span>
-                </li>
-              </ul>
-            </div>
+                </button>
+              </li>
+              <li>
+                <button
+                  data-player-modal-controls-play
+                  class="border border-black p-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewbox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                      clip-rule="evenodd"/>
+                  </svg>
+                </button>
+                <button
+                  data-player-modal-controls-pause
+                  class="border border-black p-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewbox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                      clip-rule="evenodd"/>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button
+                  data-player-modal-controls-next
+                  class="border border-black p-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewbox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.75 12a.75.75 0 01.75-.75h13.19l-5.47-5.47a.75.75 0 011.06-1.06l6.75 6.75a.75.75 0 010 1.06l-6.75 6.75a.75.75 0 11-1.06-1.06l5.47-5.47H4.5a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"/>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </div>
-        </li>
-      </ul>
-    </div>
-    <div not-hidden>
-      <div class="absolute inset-0 flex flex-col bg-white">
-        <!-- Title / Close button -->
-        <div class="flex items-start justify-between gap-x-8">
-          <div class="self-end text-lg font-bold">This is the title</div>
-          <div class="border border-black p-4">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              viewbox="0 0 24 24"
-              fill="currentColor"
-              class="h-6 w-6">
-              <path fill-rule="evenodd"
-                d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-                clip-rule="evenodd" />
-            </svg>
-          </div>
-        </div>
-        <!-- Lyrics -->
-        <div class="flex-1 overflow-y-auto">
-          <div class="whitespace-pre-line text-sm">
-            another white moon in the dark wood another green grove in the fog another pink bloom in the damp ground
-            another life for you another red light out off the windshield another black crow in the skyline another gray
-            mile on this highway another year behind keeping on my meds dancin through my head in this room without you
-            trying to get back to haven't seen it yet but even new looks blue another white moon in the dark wood
-            another
-            green grove in the fog another pink bloom in the damp ground another life for you another red light out off
-            the windshield another black crow in the skyline another gray mile on this highway another year behind
-            keeping
-            on my meds dancin through my head in this room without you trying to get back to haven't seen it yet but
-            even
-            new looks blue</div>
-        </div>
-        <!-- Visualizer / Track Position -->
-        <div class="relative my-3 h-24 bg-green-400">
-          <div class="absolute inset-0">
-            <div class="absolute bottom-0 top-0 w-3 bg-black"
-              style="left: 4%"></div>
-          </div>
-        </div>
-        <!-- Controls -->
-        <div class="">
-          <ul class="flex items-center justify-between">
-            <li>
-              <button class="border border-black p-5">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-6 w-6">
-                  <path fill-rule="evenodd"
-                    d="M20.25 12a.75.75 0 01-.75.75H6.31l5.47 5.47a.75.75 0 11-1.06 1.06l-6.75-6.75a.75.75 0 010-1.06l6.75-6.75a.75.75 0 111.06 1.06l-5.47 5.47H19.5a.75.75 0 01.75.75z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <button class="border border-black p-5">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-6 w-6">
-                  <path fill-rule="evenodd"
-                    d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-              <button class="border border-black p-5">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-6 w-6">
-                  <path fill-rule="evenodd"
-                    d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <button class="border border-black p-5">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-6 w-6">
-                  <path fill-rule="evenodd"
-                    d="M3.75 12a.75.75 0 01.75-.75h13.19l-5.47-5.47a.75.75 0 011.06-1.06l6.75 6.75a.75.75 0 010 1.06l-6.75 6.75a.75.75 0 11-1.06-1.06l5.47-5.47H4.5a.75.75 0 01-.75-.75z"
-                    clip-rule="evenodd" />
-                </svg>
-              </button>
-            </li>
-          </ul>
         </div>
       </div>
-    </div>
-  </main>
-  <footer>Footer</footer>
-  <script src="js/app.js"></script>
-</body>
+    </main>
+    <footer
+      class="px-6 py-3">
+      <div
+        class="text-xs text-gray-400">e22314425</div>
+    </footer>
+    <script
+      src="js/app.js"></script>
+  </body>
 
 </html>
