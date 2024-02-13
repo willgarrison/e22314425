@@ -1,1 +1,5 @@
+.DS_Store
 node_modules
+vendor
+api/files/*
+!api/files/.gitkeep
