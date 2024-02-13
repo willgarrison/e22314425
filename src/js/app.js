@@ -5,7 +5,7 @@ const app = {
 		update_time_interval: 1000 / 60, // 60fps
 		list_item_active_classes: ["bg-gray-100"],
 		list_item_inactive_classes: ["bg-white"],
-		force_create: true,
+		always_force_create: true,
 	},
 	elems: {
 		body: null,
@@ -67,7 +67,7 @@ const app = {
 		app.elems.modal_controls_fast_forward = app.elems.modal.querySelector("[data-player-modal-controls-fast-forward]");
 		app.elems.modal_controls_next = app.elems.modal.querySelector("[data-player-modal-controls-next]");
 
-		app.templates.list_item = app.elems.list.querySelector("[data-template-player-list-item]");
+		app.templates.list_item = app.elems.list.querySelector("[data-player-list-item-template]");
 
 		// remove the template from the dom
 		app.templates.list_item.remove();
@@ -77,7 +77,7 @@ const app = {
 
 		// set endpoint
 		let endpoint = "api/index.php?action=get_songs";
-		if (app.config.force_create) {
+		if (app.config.always_force_create) {
 			endpoint += "&force_create=1";
 		}
 
@@ -99,7 +99,7 @@ const app = {
 				app.state.current_song_index = 0;
 
 				// render the player list
-				app.renderPlayerList(app.data.songs);
+				app.renderSongList(app.data.songs);
 
 				// setup keyboard controls
 				app.setupKeyboardControls();
@@ -113,15 +113,15 @@ const app = {
 			.catch((error) => console.error(error));
 	},
 
-	renderPlayerList: function (songs) {
-		app.log("renderPlayerList...");
+	renderSongList: function (songs) {
+		app.log("renderSongList...");
 
 		songs.forEach(function (song, index) {
 			app.log("render: ", song.title, index);
 
 			// clone the template
 			let list_item = app.templates.list_item.cloneNode(true);
-			list_item.removeAttribute("data-template-player-list-item");
+			list_item.removeAttribute("data-player-list-item-template");
 			list_item.setAttribute("data-player-list-item", index);
 
 			// set the song title
@@ -130,7 +130,7 @@ const app = {
 
 			// set the song duration
 			let list_item_duration = list_item.querySelector("[data-player-list-item-duration]");
-			list_item_duration.textContent = "00:00";
+			list_item_duration.textContent = song.playtime_string;
 
 			// set the song number of plays
 			let list_item_plays = list_item.querySelector("[data-player-list-item-plays]");

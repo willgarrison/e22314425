@@ -1,5 +1,7 @@
 <?php
 
+require_once '../vendor/autoload.php';
+
 function dump($var)
 {
   echo '<pre>';
@@ -36,6 +38,9 @@ function get_songs($force_create)
     }
   }
 
+  // instantiate the getID3 class
+  $getId3 = new getID3;
+
   // create an array to hold the song files
   $song_files = [];
 
@@ -71,6 +76,13 @@ function get_songs($force_create)
       // add the file to the file details array
       $file_details['file'] = $file;
 
+      // get the file details
+      $file_info = $getId3->analyze('files/' . $directory . '/' . $file);
+
+      // add duration 
+      $file_details['playtime_seconds'] = $file_info['playtime_seconds'];
+      $file_details['playtime_string'] = $file_info['playtime_string'];
+
       // add the full path to the file details array
       $file_details['path'] = 'api/files/' . $directory . '/' . $file;
 
@@ -90,7 +102,7 @@ function get_songs($force_create)
       $file_details['plays'] = 0;
 
       // set playlist 
-      $file_details['playlist'] = null;
+      $file_details['playlist'] = "Playlist 1";
 
       // add the file details to the song_files array
       $song_files[] = $file_details;
