@@ -1,5 +1,5 @@
 .DS_Store
 node_modules
 vendor
-files/*
-!files/.gitkeep
+api/files/*
+!api/files/.gitkeep
