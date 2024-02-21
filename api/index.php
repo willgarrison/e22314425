@@ -51,13 +51,20 @@ function get_songs($force_create)
   // remove . and .. from the array
   $directories = array_diff($directories, array('.', '..'));
 
+  // remove anything that starts with a dot
+  $directories = array_filter($directories, function ($directory) {
+    return strpos($directory, '.') !== 0;
+  });
+
   // loop through the directories
   foreach ($directories as $directory) {
     // read the files from the directory
     $files = scandir('files/' . $directory);
 
-    // remove . and .. from the array
-    $files = array_diff($files, array('.', '..'));
+    // remove anything that starts with a dot
+    $files = array_filter($files, function ($file) {
+      return strpos($file, '.') !== 0;
+    });
 
     // loop through the files
     foreach ($files as $file) {
